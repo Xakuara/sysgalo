@@ -3,15 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Proyecto Hoteles</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body>
-    <div class="jumbotron">
-      <h1 class="display-4">Hoteles!</h1>
-    <p class="lead">Estamos mostrando la pagina con jumbotron.</p>
-    <p>Vamos a ver si el estilo funciona.</p>
-    <p>o nos metemos a otra clase.</p>
+<body>
+  <div class="jumbotron">
+    <h1>Hoteles</h1>
+    <p>Encuentra el alojamiento perfecto para tu viaje.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>Catálogo</h2>
+        <p>Encuentra la oferta que más te convenga</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>Atención al cliente</h2>
+        <p>Resuelve tus dudas</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>Unete</h2>
+        <p>Se parte de la gran comunidad de hoteles</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Lista de hoteles</h3>
+        <ul class="list-unstyled">
+          <li>
+            <h4>Hotel Lima</h4>
+            <p>Muy cerca al centro de la ciudad</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </li>
+          <li>
+            <h4>Hotel Miraflores</h4>
+            <p>Cerca a la playa y a centros comerciales</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </li>
+          <li>
+            <h4>Hotel La Molina</h4>
+            <p>Alejado del ruido cerca al campo</p>
+            <a href="#" class="btn btn-primary">Ver más</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
