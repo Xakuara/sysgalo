@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Hoteles</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
 <body>
   <div class="jumbotron">
@@ -12,8 +13,9 @@
     <p>Encuentra el alojamiento perfecto para tu viaje.</p>
   </div>
 
+
   <div class="container">
-    <div class="row">
+    <div class="d-flex">
       <div class="col-sm-4">
         <h2>Catálogo</h2>
         <p>Encuentra la oferta que más te convenga</p>
@@ -27,34 +29,89 @@
         <p>Se parte de la gran comunidad de hoteles</p>
       </div>
     </div>
+    <hr>
 
-    <div class="row">
-      <div class="col-md-12">
-        <h3>Lista de hoteles</h3>
-        <ul class="list-unstyled">
-          <li>
-            <h4>Hotel Lima</h4>
-            <p>Muy cerca al centro de la ciudad</p>
-            <a href="#" class="btn btn-primary">Ver más</a>
-          </li>
-          <li>
+    <div class="d-flex flex-wrap flex-row-reverse">
+      <div class="card-hotel d-flex flex-column justify-content-between">
+          <h4>Hotel Lima</h4>
+          <p>En el mismo centro de la ciudad, disfruta de todas las comodidades.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between"> 
+          <div>
             <h4>Hotel Miraflores</h4>
             <p>Cerca a la playa y a centros comerciales</p>
-            <a href="#" class="btn btn-primary">Ver más</a>
-          </li>
-          <li>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reserva">Reserva</button>
+          </div>
+      </div>    
+      <div class="card-hotel d-flex flex-column justify-content-between">
+          <div>
             <h4>Hotel La Molina</h4>
-            <p>Alejado del ruido cerca al campo</p>
-            <a href="#" class="btn btn-primary">Ver más</a>
-          </li>
-        </ul>
+            <p>Disfruta del sol, alejado del ruido citadino. Cerca a restaurantes de campo</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reserva">Reserva</button>
+          </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h4>Hotel Lince</h4>
+            <p>Muy cerca al centro de la ciudad y al centro financiero</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reserva">Reserva</button>
+          </div>
+      </div>
+      <div class="card-hotel d-flex flex-column justify-content-between"> 
+          <div>
+            <h4>Hotel Barranco</h4>
+            <p>Cerca a la playa y a centros comerciales</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reserva">Reserva</button>
+          </div>
+      </div>    
+      <div class="card-hotel d-flex flex-column justify-content-between">
+          <div>
+            <h4>Hotel Pachacamac</h4>
+            <p>Alejado del ruido cerca al campo y al río. Muchas actividades de aventuras.</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reserva">Reserva</button>
+          </div>
       </div>
     </div>
   </div>
-  <div>
+    <footer>
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">Facebook</a>
+          <a href="http://www.x.com">X</a>
+          <a href="http://www.instagram.com">Instagram</a>
+        </div>
+
+        <div class="col-sm-4">
+          <address>
+            <h3> Oficina principal </h3>
+            <p> Tintoretto 142, San Borja-Lima</p>
+            <p> +51 998865462</p>
+            <p> contacto@gmail.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">Nosotros</a>
+          <a href="http://www.x.com">Precios</a>
+          <a href="http://www.instagram.com">Contacto</a>      
+        </div>
+      </div>
+    </footer>
+
+  
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-  </div>
+
   </body>
 </html>
