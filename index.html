@@ -32,21 +32,38 @@
         <li class="breadcrumb-item active" aria-current="page">Home</li>
       </ol>
     </nav>
-    <div class="d-flex">
+    <div class="row">
       <div class="col-sm-4">
-        <h2>Catálogo</h2>
-        <p>Encuentra la oferta que más te convenga</p>
+        <button class="btn btn-primary mb-3" role="button" data-bs-toggle="collapse" data-bs-target="#catalogo" aria-expanded="false" aria-controls="multiCollapse1">Catálogo</button>
       </div>
       <div class="col-sm-4">
-        <h2>Atención al cliente</h2>
-        <p>Resuelve tus dudas</p>
+        <button class="btn btn-primary" role="button" data-bs-toggle="collapse" data-bs-target="#atencion" aria-expanded="false" aria-controls="multiCollapse2">Atención al cliente</button>
       </div>
       <div class="col-sm-4">
-        <h2>Unete</h2>
-        <p>Se parte de la gran comunidad de hoteles</p>
+        <button class="btn btn-primary" role="button" data-bs-toggle="collapse" data-bs-target="#unete" aria-expanded="false" aria-controls="multiCollapse3">Únete</button>
+      </div>
+
+
+    <div class="row">
+      <div class="col">
+        <div class="collapse multi-collapse"  id="catalogo">
+        <p>Encuentra la oferta que más te convenga y disfruta de tu estadía</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="atencion">
+        <p>Resuelve tus dudas con nuestra área de atención al cliente</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="collapse multi-collapse" id="unete">
+        <p>Inscríbete y se parte de la gran comunidad de hoteles que confía en nosotros</p>
+        </div>
       </div>
     </div>
+
     <hr>
+
     <img src="images\imagen_lima.jpg" class="img-fluid" alt="Responsive image">
 
     <div class="d-flex flex-wrap flex-row-reverse">
