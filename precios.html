@@ -125,20 +125,54 @@
         </div>
       </div>
       <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-        <div class="d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header" style="background-color: blue; color: white;">
-              Tarjetas Aceptadas
+        <div class="accordion" id="accordionTarjetas">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSilver" aria-expanded="true" aria-controls="collapseSilver">
+                  Tarjeta Silver
+                </button>
+              </h5>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tarjeta Silver</li>
-              <li class="list-group-item">Tarjeta Gold</li>
-              <li class="list-group-item">Tarjeta Platinum</li>
-            </ul>
+            <div id="collapseSilver" class="collapse" aria-labelledby="HeadingOne" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Puede realizar reservas hasta 3 meses sin intereses.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGold" aria-expanded="true" aria-controls="collapseGold">
+                  Tarjeta Gold
+                </button>
+              </h5>
+            </div>
+            <div id="collapseGold" class="collapse" aria-labelledby="HeadingTwo" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Puede realizar reservas hasta 6 meses sin intereses.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePlatinum" aria-expanded="true" aria-controls="collapsePlatinum">
+                  Tarjeta Platinum
+                </button>
+              </h5>
+            </div>
+            <div id="collapsePlatinum" class="collapse" aria-labelledby="HeadingThree" data-parent="#accordionTarjetas">
+              <div class="card-body">
+                Puede realizar reservas hasta 12 meses sin intereses.
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+      <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+        Comentarios
+      </div>
   </div>
     <footer>
       <div class="row">
