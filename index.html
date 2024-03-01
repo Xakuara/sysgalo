@@ -63,14 +63,33 @@
     </div>
 
     <hr>
-
-    <img src="images\imagen_lima.jpg" class="img-fluid" alt="Responsive image">
+    <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="\images\imagen_lima.jpg" class="d-block w-100" alt="Primer Slide">
+        </div>
+        <div class="carousel-item">
+          <img src="\images\miraflores_img.jpg" class="d-block w-100" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img src="\images\barranco_img.jpg" class="d-block w-100" alt="Tercer Slide">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <div class="d-flex flex-wrap flex-row-reverse">
       <div class=" card card-hotel d-flex flex-column justify-content-between">
         <img class="card-img-top" src="images\hotel.jpg" alt="hotel img">
           <div class="card-body">
-            <h5 class="card-title">Hotel Lima</h5>
+            <h5 class="card-title" data-bs-toggle="tooltip" data-placemet="top" title="Puede acceder a traslados gratis desde el aeropuerto">Hotel Lima</h5>
             <h6 class="card-subtitle text-muted">Lima</h6>
             
             <p class="card-text">En el mismo centro de la ciudad, disfruta de todas las comodidades.</p>
@@ -131,7 +150,7 @@
             <p class="card-text">Alejado del ruido cerca al campo y al río. Muchas actividades de aventuras.</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reserva"><i class="bi bi-plus"></i>Ver más</button>
+            <button class="btn btn-primary btn-reserva" data-bs-toggle="popover" title="Apresúrate!" data-bs-content="3 últimas habitaciones disponibles"><i class="bi bi-plus"></i>Ver más</button>
           </div>
       </div>
       <div class="card card-hotel d-flex flex-column justify-content-between">
@@ -143,7 +162,7 @@
             <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contáctanos</button>
           </div>
         <div>
-          <button class="btn btn-primary btn-reserva"><i class="bi bi-plus"></i>Ver más</button>
+          <button class="btn btn-primary btn-reserva" ><i class="bi bi-plus"></i>Ver más</button>
         </div>
       </div>
     </div>
@@ -204,6 +223,12 @@
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script> const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 
   </body>
 </html>
